@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+Website made by JerosGamer89
+for the 2.2 GDPS Editor server
+
+If you want to copy the source
+code or just look at it, please
+go to the repository:
+https://github.com/Ascript89/wgdps-website
+
+-->
+
+<head>
+	<meta property="og:site_name" content="2.2 Editor website" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="2.2 Editor website" />
+	<meta property="og:description" content="Official website for the 2.2 GDPS" />
+	<meta id="meta-image" property="og:image" itemprop="image" content="" />
+	<meta name="author" content="2.2 Editor" />
+  	<meta name="keywords" content="gdps editor 2.2, 2.2 editor," />
+  	<meta name="description" content="" />
+
+	<link rel="icon" href="assets/logo.jpg" />
+	<title>GDPS Editor 2.2 website</title>
+
+	<meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="desktop">
+		<div class="mac-topbar">
+			<img src="assets/apple-black.png" height="20px">
+
+			<button class="dropbtn" style="font-weight: bold;">2.2 Editor</button>
+
+			<div class="dropdown">
+				<button class="dropbtn">File</button>
+				<div class="dropdown-content">
+				  <a href="./bye.html">Power off</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">Edit</button>
+				<div class="dropdown-content">
+				  <a href="#">Undo</a>
+				  <a href="#">Redo</a>
+				  <hr style="margin: 0px 10px;">
+				  <a href="#">Select all</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">View</button>
+				<div class="dropdown-content">
+				  <a href="#" id="zoomDisplay">Viewport: your monitor lol</a>
+				  <hr style="margin: 0px 10px" />
+				  <a href="#" onclick="increaseZoom()">Zoom in</a>
+				  <a href="#" onclick="decreaseZoom()">Zoom out</a>
+				  <a href="#" onclick="resetZoom()">Restart zoom</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">Meme</button>
+				<div class="dropdown-content">
+					<a href="#" onclick="displayMeme();" id="dmBtn">Display meme</a>
+				  </div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropbtn">About</button>
+				<div class="dropdown-content">
+					<a href="#" class="openWindow" data-id="4">Help</a>
+					<a href="#" onclick="alert('2.2 Editor website  |  Version 1.0')">About 2.2 Editor web</a>
+					<hr style="margin: 0px 10px;">
+					<a href="#" class="openWindow" data-id="5">About MacOS Web</a>
+				</div>
+			</div>
+
+			<div class="macos-right">
+				<button class="dropbtn">Mon 29th July</button>
+			</div>
+		</div>
+
+		<div class="window closed" data-title="Download">
+			<h1>Download 2.2 Editor</h1>
+			<div class="dload-container">
+				<a href="https://cdn.discordapp.com/attachments/847950548921614366/880273788489568326/GDPS_Editor_2.2.0.4.apk" class="dload-btn">
+					<span>Download latest</span>
+				</a>
+				<a href="https://www.mediafire.com/file/9b7w625an5luvr7/GDPS+editor+FIX+(legendary+noads).apk/file" class="dload-btn">
+					<span><span class="dload-cs">outdated</span>Only if latest crashes </span>
+				</a>
+			</div>
+		</div>
+		<div class="window closed" data-title="WGDPS Browser">
+			<iframe src="https://gdpseditor.gdbrowser.com/" height="99%" width="100%">
+				Couldn't display the window. Please enable the iframe
+				support on your browser.
+			</iframe>
+			<span class="thanks-colon">Credits to @GDColon for this amazing tool. Original tool: GD Browser.</span>
+		</div>
+
+		<div class="window closed" data-title="Credits">
+			<h1>Credits</h1>
+			<table class="credits-table">
+				<tr>
+				  <td>
+					<img src="assets/credits/andy.jpg" />
+					<div class="credits-text">
+						<h3>iAndy_HD3</h3>
+						<little>Owner, Developer</little>
+					</div>
+				  </td>
+				  <td>
+					<img src="assets/credits/blaze.jpg" />
+					<div class="credits-text">
+						<h3>Blaze</h3>
+						<little>Creator, Owner</little>
+					</div>
+				  </td>
+				  <td>
+					<img src="assets/credits/nickname.jpg" />
+					<div class="credits-text">
+						<h3>NicknameGG</h3>
+						<little>Owner</little>
+					</div>
+				  </td>
+				</tr>
+				<tr>
+					<td>
+					  <img src="assets/credits/iad.jpg" />
+					  <div class="credits-text">
+						  <h3>Italian Apk Downloader</h3>
+						  <little>Developer</little>
+					  </div>
+					</td>
+					<td>
+					  <img src="assets/credits/eitan.jpg" />
+					  <div class="credits-text">
+						  <h3>Eitan</h3>
+						  <little>Developer</little>
+					  </div>
+					</td>
+					<td>
+
+					  </div>
+					</td>
+				  </tr>
+			  </table>
+		</div>
+
+		<div class="window" data-title="Welcome">
+			<center>
+				<img src="assets/logo.jpg" style="height:170px;border-radius: 30%;margin-bottom:30px;">
+				<h1>Welcome to 2.2 Editor!</h1>
+			</center>
+			<p>
+				Welcome to the website for the 2.2 leaked
+				GDPS. Here in this website, you can
+				look up for pretty much everything related
+				to it.
+			</p>
+			<hr style="margin: 10px;">
+			<div class="welcum-q">
+				<strong>Questions?</strong>&nbsp;<p></p>
+				<img src="assets/discord.svg" height="18px">&nbsp;&nbsp;<a href="https://discord.gg/4n8n98AkSk" target="_blank">Discord server</a><br>
+				<img src="assets/faq.png" height="20px">&nbsp;&nbsp;Open the FAQ window
+			</div>
+			<div class="welcum-right">
+				<strong>Liked the website?</strong>
+				<br>Share this link with your friends!
+				<pre>tiny.one/gdpsweb</pre>
+			</div>
+		</div>
+
+		<div class="window closed" data-title="Frequently Asked Questions">
+			<div class="faq-content">
+				<h1 style="position:sticky;top:0;width:100%;background:#e2e2e2;">FAQ / Help<hr></h1>
+				<h2>1. What is a GDPS?</h2>
+				<p>
+					Geometry Dash Private Server where we have our
+					own levels, our own in-game moderators, working
+					top 100 and so on.
+				</p>
+	
+				<h2>2. Why is this GDPS special?</h2>
+				<p>
+					This GDPS runs on the most recent 2.2 leak, it
+					happened in december 2019 when Robtop leaked new
+					contents of the 2.2 Update on GD LIte.
+				</p>
+	
+				<h2>3. In which platforms can I play the GDPS?</h2>
+				<p>
+					The answer is related to the question above, the
+					leak happened only on the playstore which means
+					this GDPS is only playable on Android and on other
+					platforms where Android can be emulated such as
+					PC using Bluestacks 5 Emulator.
+				</p>
+	
+				<h2>4. What kind of new features does this GDPS offers that are not already in others?</h2>
+				<p>
+					The biggest one is the Platformer mode, as you can
+					see on the sneak peek by robtop himself
+					(https://youtu.be/g4r6BTdU2M0), allows you to create
+					2D platformer-gameplay. This GDPS has also a lot
+					of new 2.2 Editor features like particle editor,
+					swing copter game-mode, new triggers like song
+					trigger, timewarp trigger etc.
+				</p>
+	
+				<h2>5. Where can I download the GDPS?</h2>
+				<p>
+					You can download the latest version of the GDPS
+					in the #🔴-downloads channel, you can look up
+					the changelog in #changelog and you can get
+					roles in #self-roles to be aware about the
+					next updates and announcements.
+				</p>
+	
+				<h2>6. Who contributed to the project and who is leading it right now?</h2>
+				<p>
+					<h4>Blaze</h4>
+					<p>
+						https://www.youtube.com/channel/UCcfPtuop90e_JzxPkiZ6Q5Q
+						(aka Shira) started this project with the
+						restoration of the GD lite leak editor, the
+						first versions of the editor were made by
+						him. The old versions are still available
+						in #old-downloads.
+					</p>
+		
+					<h4>Nickname and Mein</h4>
+					<p>
+						They are the current owners of the main
+						project, Nickname being the Discord server
+						owner and Mein being the in-game server
+						moderator.
+					</p>
+		
+					<h4>Italian Apk Downloader</h4>
+					<p>
+						He is the one who develops the most recent
+						versions, thanks to his contributions this
+						GDPS would not have come this far.
+					</p>
+		
+					<h4>iAndy_HD3</h4>
+					<p>
+						He is the discord server admin, he releases
+						the new updates and he is the elder mod who
+						usually rates the levels.
+					</p>
+				</p>
+			</div>
+		</div>
+
+		<div class="window closed" data-title="">
+			<center>
+				<img src="assets/apple-black.png" height="200px" /><p>
+				<h1>MacOS X Web</h1>
+				<p>Version 1.1</p>
+				<little>Made by JerosGamer89</little>
+			</center>
+		</div>
+
+
+		
+		<div id="icons" style="margin-top: 20px;">
+			<a title="Download the latest version of the GDPS" class="openWindow" data-id="0">
+				<img src="assets/di/download.png"><br>
+				Download
+			</a>
+			<a title="Open the GDPS tools page" href="http://gdpseditor.rf.gd/tools/" target="_blank">
+				<img src="assets/di/tools.png"><br>
+				GDPS Tools
+			</a>
+			<a title="Open the GDPS tools page" class="openWindow" data-id="2">
+				<img src="assets/di/credits.png"><br>
+				Credits
+			</a>
+			<a title="aka Firefox v2" class="openWindow" data-id="1">
+				<img src="assets/di/browser.png"><br>
+				GDPS Browser
+			</a>
+			<a title="Check your doubts here" class="openWindow" data-id="4">
+				<img src="assets/faq.png"><br>
+				FAQ/Help
+			</a>
+			<a title="Main window" class="openWindow" data-id="3">
+				<img src="assets/di/welcome.png"><br>
+				Welcome!
+			</a>
+			<a title="Join the Discord server" href="https://discord.com/invite/4n8n98AkSk" target="_blank">
+				<img src="assets/di/discord.png"><br>
+				Discord server
+			</a>
+		</div>
+	</div>
+
+	<!-- MOBILE VERSION -->
+
+	<div class="ios">
+		<div class="statusbar">
+			<img src="assets/iOS/mobile-singal.png" />
+			<span>10:14</span>
+			<img src="assets/iOS/battery.png" />
+		</div>
+		<div class="appmenu">
+			<a href="https://cdn.discordapp.com/attachments/847950548921614366/875515563164713010/GDPS_Editor_2.2.0.3.apk">
+				<img src="assets/di/download.png" /><br>
+				Download
+			</a>
+			<a href="https://gdpseditor.gdbrowser.com" onclick="alert('NOTE: You will have to rotate your device to navigate, as GD Browser is not compatible with mobile devices.')">
+				<img src="assets/di/browser.png" /><br>
+				Browser
+			</a>
+			<a href="http://gdpseditor.rf.gd/tools/">
+				<img src="assets/di/tools.png" /><br>
+				GDPS Tools
+			</a>
+			<a href="https://discord.gg/gdps">
+				<img src="assets/di/discord.png" /><br>
+				Discord
+			</a>
+			<a href="./mobile/about.html">
+				<img src="assets/di/info.png" /><br>
+				About
+			</a>
+			<a href="./mobile/faq.html">
+				<img src="assets/faq.png" /><br>
+				FAQ / Help
+			</a>
+			<a href="./credits.html">
+				<img src="assets/di/credits.png" /><br>
+				Credits
+			</a>
+		</div>
+</body>
+</html>
