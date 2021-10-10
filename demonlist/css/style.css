@@ -1,0 +1,275 @@
+/*
+
+Website made by JerosGamer89
+for the 2.2 GDPS Editor Demonlist
+
+If you want to copy the source
+code or just look at it, please
+go to the repository:
+https://github.com/Ascript89/gdpseditor-demonlist
+
+*/
+
+@import url('mobile.css');
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/sanfrancisco-apple-font.otf');
+}
+
+@font-face {
+    font-family: 'OLnums';
+    src: url('../fonts/f1-superbold.ttf');
+}
+
+@font-face {
+    font-family: 'OLtitle';
+    src: url('../fonts/f1-regular.ttf');
+}
+
+html, body {
+    font-family: 'Regular';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #122d3d;
+    color: white;
+    padding: 20px;
+}
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #00000000;}
+::-webkit-scrollbar-thumb {background: #2c5479;opacity:70%;transition:200ms;}
+::-webkit-scrollbar-thumb:hover {background: #376896;opacity:100%;}
+
+.mobile-warning {
+    background-color: black;
+    position: fixed;
+    z-index: 20;
+    padding: 30px;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    margin: -20px;
+    display: none;
+}
+
+nav {
+    background-color: #2d4452;
+    background-image: url('../assets/Extreme_Demon.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+nav img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+nav .nav-title1 {
+    font-weight: bold;
+}
+
+nav .nav-title2 {
+    opacity: 60%;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+nav a {
+    background-color: hsl(203, 29%, 30%);
+    color: #adefff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+nav a:hover {
+    background-color: hsl(203, 29%, 40%);
+    text-decoration: 2px solid underline;
+}
+
+#myInput {
+    background-color: #333;
+    color: white;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    width: 150px;
+    transition: 250ms;
+    float: right;
+}
+
+#myInput:focus {
+    background-color: white;
+    color: dimgray;
+    border-bottom: 3px solid #272727;
+    width: 300px;
+    font-size: 18px;
+}
+
+.home-banner {
+    background-image: url('../assets/h.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin-top: -11px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-shadow: #000 2px 2px 10px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#lc {
+    list-style-position: inside;
+    font-family: 'OLnums';
+    font-size: 40px;
+    padding: 0;
+}
+
+#lc li {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: dimgray;
+    margin-bottom: 10px;
+}
+
+#lc li:nth-child(1) {background-color: goldenrod !important;}
+#lc li:nth-child(2) {background-color: silver !important;}
+#lc li:nth-child(3) {background-color: #b87333 !important;}
+
+/* Lo que hay aquí abajo de nth-child 4 y 5, es para que los
+demons en los puestos 4 y 5 aparezcan con el color del trofeo
+verde de Geometry Dash, esta deshabilitado, pero si lo quieres
+habilitar solo quitar esto que se encuentra entre esas dos lineas --> /*  */ 
+
+/*
+#lc li:nth-child(4) {background-color: #6ea06e !important;}
+#lc li:nth-child(5) {background-color: #6ea06e !important;}
+*/
+
+.li-content {
+    background-color: #122d3d;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Regular';
+    font-size: initial;
+    display: flex;
+    align-items: center;
+    width: 82vw;
+    float: right;
+    margin-top: -17.5px;
+}
+
+.li-content img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.li-content label {
+    font-size: 30px;
+    font-family: 'OLtitle';
+    font-weight: 600;
+}
+
+.li-content span {
+    opacity: 80%;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+ 
+.li-content .yt {
+    background-color: #e22929;
+    color: white;
+    position: absolute;
+    right: 100px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.li-content .yt:hover {
+    background-color: hsl(0, 76%, 42%);
+}
+
+.li-content .id {
+    background-color: gray;
+    color: white;
+    position: absolute;
+    right: 280px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 200ms;
+    outline: none;
+    border: none;
+    font-family: 'Regular';
+    font-size: initial;
+    cursor:text;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.li-content input {
+    display: none;
+}
+
+.li-content .id span {
+    opacity: 70% !important;
+    margin: 0 !important;
+    font-size: initial !important;
+}
+
+footer {
+    background-image: url("../assets/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    padding-bottom: 60px;
+    line-height: 8px;
+    border-radius: 15px;
+}
+
+footer p {
+    font-size: 24px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+footer span {
+    opacity: 60%;
+}
+
+footer a {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 200ms;
+    float: right;
+}
+
+footer a:hover {
+    background-color: hsl(0, 0%, 30%);
+}
