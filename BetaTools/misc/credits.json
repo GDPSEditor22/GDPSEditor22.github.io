@@ -1,0 +1,73 @@
+{
+    "credits": [
+        {
+            "header": "Programming/Website",
+            "name": "Colon",
+            "youtube": ["https://youtube.com/channel/UCFDsxSlQXpLLpVScy2NmbcQ", "youtube"],
+            "twitter": ["https://twitter.com/TheRealGDColon", "twitter"],
+            "github": ["https://github.com/GDColon", "github"]
+        },
+
+        {
+            "header": "Accurate Leaderboard",
+            "name": "XShadowWizardX",
+            "youtube": ["https://www.youtube.com/channel/UCaf3-yyZDsAwh1IlYte5VtA", "youtube"],
+            "twitter": ["https://twitter.com/XShadowWizardX", "twitter"],
+            "github": ["https://docs.google.com/spreadsheets/d/10lbPnDYJXhbtlA0ls0cGjjX_osFSG559IDrTbhgPHvc", "ulButton"]
+        },
+
+        {
+            "header": "Demon List",
+            "name": "stadust",
+            "ign": "stardust1971",
+            "youtube": ["https://youtube.com/user/stardust19710", "youtube"],
+            "twitter": ["https://twitter.com/stadust1971", "twitter"],
+            "github": ["https://pointercrate.com", "demonButton"]
+        },
+
+        {
+            "header": "Level Analyzing Help",
+            "name": "Alten",
+            "youtube": ["https://youtube.com/channel/UC9M8hLqh2yZIPSDvpyL7o8g", "youtube"],
+            "twitter": ["https://twitter.com/altenhh", "twitter"],
+            "github": ["https://github.com/Altenhh", "github"]
+        },
+
+        {
+            "header": "API Help",
+            "name": "SMJS",
+            "ign": "SMJSGaming",
+            "youtube": ["https://youtube.com/channel/UCwEsWDs9kGN2vvoiNTJKdaQ", "youtube"],
+            "twitter": ["https://twitter.com/SMJS90708001", "twitter"],
+            "github": ["https://github.com/SMJSGaming", "github"]
+        },
+
+        {
+            "header": "API Help",
+            "name": "Alex1304",
+            "youtube": ["https://youtube.com/channel/UC0hFAVN-GAbZYuf_Hfk1Iog", "youtube"],
+            "twitter": ["https://twitter.com/gd_alex1304", "twitter"],
+            "github": ["https://github.com/Alex1304", "github"]
+        },
+
+        {
+            "header": "Everything Else",
+            "name": "RobTop",
+            "youtube": ["https://youtube.com/channel/UCz_yk8mDSAnxJq0ar66L4sw", "youtube"],
+            "twitter": ["https://twitter.com/RobTopGames", "twitter"],
+            "github": ["https://twitch.tv/RobTopGames", "twitch"]
+        }
+    ],
+
+    "specialThanks": [
+        "AlFas",
+        "Cvolton",
+        "Figment/FigmentBoy",
+        "Qufy",
+        "Ucrash",
+        "ViPriN",
+        "Wylie/TheWylieMaster",
+        "zmxmx",
+        "101arrowz"
+    ]
+}
