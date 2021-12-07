@@ -1,0 +1,65 @@
+<head>
+	<title>GDPS Editor 2.2 Tools</title>
+	<!--- Credits to GD Colon --->
+	<meta charset="utf-8">
+	<link href="assets/css/tools.css" type="text/css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135255146-3"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-135255146-3');</script>
+	<link rel="icon" href="assets/cp.png">
+	<meta id="meta-title" property="og:title" content="GDPS Editor 2.2 Tools">
+	<meta id="meta-desc" property="og:description" content="GDPS Editor is a custom Geometry Dash Server, for more info go to discord https://discord.gg/gdps.">
+	<meta id="meta-image" name="og:image" content="https://gdbrowser.com/assets/coin.png" itemprop="image">
+	<meta name="theme-color" content ="#0e89e1">
+	<meta name="twitter:card" content="summary">
+</head>
+<body>
+<div id="everything">
+    <div style="font-size: 2.2vh; margin-top: 1.2% height: 50vh;">
+    <center><p style="font-size: 2.5vh">Original website by GD Colon</br>Modifications by CarlosPre</p></center>
+    </div>
+	<div id="ground" style="position:absolute; bottom: 0%; left: 0%; width: 100%; pointer-events: none">
+	<img class="cornerPiece" src="assets/groundSquare_01_001.png" width="100%">
+	</div>
+	<div style="position:absolute; bottom: 93%; left: 80%; width: 20%; pointer-events: none">
+	<p style="font-size: 2.5vh">⠀⠀⠀⠀⠀⠀Version: editorBeta2.2.0.0.2</p>
+	</div>	
+	<div style="position:absolute; top: 90%; left: 0%; width: 100%; pointer-events: none">
+	<a href="#"><img class="gdButton" src="assets/joinDiscord_001.png" width="20%"></a>
+	</div>
+	<div style="position:absolute; top: 80%; left: 0%; width: 100%; pointer-events: none">
+	⠀<a href="https://gdpseditor.gdbrowser.com" ><img class="gdButton" src="assets/gj_wsIcon_001.png" width=4%;></a>
+	<a href="https://twitter.com/iAndy_HD3" ><img class="gdButton" src="assets/gj_twIcon_001.png" width=4%;></a>
+	<a href="https://gdpseditor.gdbrowser.com" ><img class="gdButton" src="assets/gj_ytIcon_001.png" width=4%;></a>
+	<a href="https://youtube.com/channel/UC9vRBa6Wffb0R7N7ezbwh9A" ><img class="gdButton" src="assets/gj_ytIcon_001.png" width=4%;></a>
+	</div>
+	<div class="supercenter center" id="menuButtons">
+		<table>
+			<tr class="menuButtonList" style="margin-top: -2%">
+				<td><a tabindex="1" href="./account"><img class="menubutton menu-saved" src="assets/GJ_AccountBtn_001.png"></a></td>
+				<td><a tabindex="1" href="./help"><img class="menubutton menu-saved" src="assets/GJ_InAppHelpBtn_001.png"></a></td>
+				<td><a tabindex="1" href="./reupload"><img class="menubutton menu-saved" src="assets/GJ_ReuploadBtn_001.png"></a></td>
+				<td><a tabindex="1" href="./more"><img class="menubutton menu-saved" src="assets/GJ_MoreToolsBtn_001.png"></a></td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; bottom: 2.5%; right: 1.5%; text-align: right; width: 18%;">
+	<a href="#"><img class="gdButton" src="assets/GJ_TranslateBtn_001.png" width="40%"></a>
+	</div>
+	<div class="center2" width="5%" style="margin-top: -2%">
+	<img class="logo" src="assets/GJ_logo_001.png" height="15.5%"><br>
+	<img id="tools" src="assets/GJ_toolsTxt_001.png" height="7.5%" style="margin: 0.5% 0% 0% 30%">
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/sizeGJcheck.js?"></script>
+<script>
+var images = ['GJ_cityBG_001.png', 'GJ_desertBG_001.png', 'GJ_factoryBG_001.png', 'GJ_forestBG_001.png'];
+$('html').css({'background-image': 'url(assets/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+let page = 1
+$('#tools').css('filter', `hue-rotate(${Math.floor(Math.random() * (330 - 60)) + 60}deg) saturate(${Math.floor(Math.random() * (150 - 100)) + 100}%)`)
+
+var images = ['GJ_cityBG_001.png', 'GJ_desertBG_001.png', 'GJ_factoryBG_001.png', 'GJ_forestBG_001.png'];
+$('#ground').css({'background-image': 'url(assets/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+</script>
