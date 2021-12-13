@@ -1,1 +1,2 @@
-{"version":2206,"particles":10}
+<?php
+echo "{\"version\":2206,\"particles\":10}";
